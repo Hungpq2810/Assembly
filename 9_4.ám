@@ -1,0 +1,7 @@
+.data
+Message: .asciiz "Ket qua tinh giai thua la: "
+
+.text
+main:
+	jal WRAP
+ 

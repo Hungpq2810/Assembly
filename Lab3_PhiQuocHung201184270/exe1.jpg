@@ -1,0 +1,20 @@
+#Laboratory Exercise 3, Sample Code 1 
+.text
+	li $s1, 3	# i = 3
+	li $s2, 5 	# j = 5
+	li $t1, 7 	
+	li $t2, 9 
+	li $t3, 11  
+start:  slt $t0,$s2,$s1 # i < j ? 
+	bne $t0,$zero,else # … 
+	addi $t1,$t1,1 # … 
+	addi $t3,$zero,1 # … 
+	j endif # … 
+else:   addi $t2,$t2,-1 # … 
+	add $t3,$t3,$t3 # … 
+endif:
+
+
+#	In this exercise, init i = 3, j = 5,  $t1 = 7, $t2 = 9, $ t3 ==11
+#	bne means branch not equal
+#	so the clauses in start( the 2 addi runs)
